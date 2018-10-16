@@ -46,6 +46,11 @@ class LinkedList
         return true;
     }
 
+    /**
+     * Display Data of Linked List
+     *
+     * @return bool
+     */
     public function display()
     {
         echo 'Total Book Title: ' . $this->_totalNodes;
