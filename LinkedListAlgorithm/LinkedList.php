@@ -46,6 +46,134 @@ class LinkedList
         return true;
     }
 
+
+    /**
+     * Insert Data Into First Node
+     *
+     * @param string|null $data
+     * @return bool
+     */
+    public function insertAtFirst(string $data = null)
+    {
+
+        $newNode = New ListNode($data);
+
+        if ($this->_firstNode === null) {
+
+            $this->_firstNode = $newNode;
+
+        } else {
+
+            $currentFirstNode = $this->_firstNode;
+
+            $this->_firstNode = $newNode;
+
+            $newNode->next = $currentFirstNode;
+
+            $this->_totalNodes++;
+
+            return true;
+        }
+
+    }
+
+    /**
+     * Search about data
+     * @param $data
+     * @return bool|null
+     */
+    public function search($data)
+    {
+        if ($this->_totalNodes) {
+
+            $currentNode = $this->_firstNode;
+
+            while ($currentNode !== null) {
+
+                if ($currentNode->data == $data) {
+
+                    return $currentNode;
+                }
+
+                $currentNode = $currentNode->next;
+
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Insert Data before specific node
+     *
+     * @param $data
+     * @param $query
+     */
+    public function insertBefore($data = NULL, $query = NULL)
+    {
+        $newNode = new ListNode($data);
+
+        if ($this->_firstNode !== null) {
+
+            $previous = NULL;
+            $currentNode = $this->_firstNode;
+
+            while ($currentNode !== NULL) {
+
+                if ($currentNode->data == $query) {
+                    $newNode->next = $currentNode;
+                    $previous->next = $newNode;
+                    $this->_totalNodes++;
+                    break;
+                }
+                $previous = $currentNode;
+                $currentNode = $currentNode->next;
+            }
+        }
+    }
+
+
+    public function insertAfter($data, $query)
+    {
+        $newNode = new ListNode($data);
+
+        if ($this->_firstNode) {
+            $nextNode = null;
+            $currentNode = $this->_firstNode;
+
+            while ($currentNode !== NULL) {
+                if ($currentNode->data == $query) {
+                    if ($nextNode !== null) {
+                        $nextNode->next = $nextNode;
+                    }
+                    $currentNode->next - $newNode;
+                    $this->_totalNodes++;
+                    break;
+                }
+            }
+        }
+    }
+
+    public function insertAfters($data = NULL, $query = NULL)
+    {
+        $newNode = new ListNode($data);
+        if ($this->_firstNode) {
+            $nextNode = NULL;
+            $currentNode = $this->_firstNode;
+            while ($currentNode !== NULL) {
+                if ($currentNode->data === $query) {
+                    if ($nextNode !== NULL) {
+                        $newNode->next = $nextNode;
+                    }
+                    $currentNode->next = $newNode;
+                    $this->_totalNode++;
+                    break;
+                }
+                $currentNode = $currentNode->next;
+                $nextNode = $currentNode->next;
+            }
+        }
+    }
+
     /**
      * Display Data of Linked List
      *
@@ -53,15 +181,18 @@ class LinkedList
      */
     public function display()
     {
-        echo 'Total Book Title: ' . $this->_totalNodes;
+        echo 'Total Book Title: ' . $this->_totalNodes . '';
 
         $currentNode = $this->_firstNode;
 
-        while ($currentNode->next !== null) {
+        while ($currentNode !== null) {
 
-            echo $currentNode->data . "\n";
+            echo $currentNode->data . "     ";
 
             $currentNode = $currentNode->next;
         }
+        echo '';
     }
+
+
 }
