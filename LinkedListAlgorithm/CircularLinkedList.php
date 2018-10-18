@@ -4,23 +4,15 @@
 namespace LinkedListAlgorithm;
 
 
-class LinkedList implements \Iterator
+class CircularLinkedList
 {
 
     /**
-     * Current Node
+     * Link to the next data
      *
-     * @var ListNode| null
+     * @var int| by default = 0
      */
-    private $_currentNode = NULL;
-
-    /**
-     * Current Node Position
-     *
-     * @var int
-     */
-    private $_currentPosition = 0;
-
+    public $_totalNodes = 0;
     /**
      * First Node to be linked to Next Node
      *
@@ -29,38 +21,28 @@ class LinkedList implements \Iterator
     private $_firstNode = null;
 
     /**
-     * Link to the next data
-     *
-     * @var int| by default = 0
-     */
-    public $_totalNodes = 0;
-
-
-    /**
      * Insert data to Linked List
      *
-     * @param null $data
+     * @param mixed $data
      * @return bool
      */
-    public function insert($data = null)
+
+    public function insertAtEnd($data)
     {
         $newNode = new ListNode($data);
-
         if ($this->_firstNode === NULL) {
-            $this->_firstNode = $newNode;
+            $this->_firstNode = &$newNode;
         } else {
             $currentNode = $this->_firstNode;
-            while ($currentNode->next !== null) {
+            while ($currentNode->next !== $this->_firstNode) {
                 $currentNode = $currentNode->next;
             }
             $currentNode->next = $newNode;
         }
-
+        $newNode->next = $this->_firstNode;
         $this->_totalNodes++;
-
-        return true;
+        return TRUE;
     }
-
 
     /**
      * Insert Data Into First Node
@@ -68,7 +50,8 @@ class LinkedList implements \Iterator
      * @param string|null $data
      * @return bool
      */
-    public function insertAtFirst(string $data = null)
+    public
+    function insertAtFirst(string $data = null)
     {
 
         $newNode = New ListNode($data);
@@ -97,7 +80,8 @@ class LinkedList implements \Iterator
      * @param $data
      * @return bool|null
      */
-    public function search($data)
+    public
+    function search($data)
     {
         if ($this->_totalNodes) {
 
@@ -123,7 +107,8 @@ class LinkedList implements \Iterator
      * @param $data
      * @param $query
      */
-    public function insertBefore($data = NULL, $query = NULL)
+    public
+    function insertBefore($data = NULL, $query = NULL)
     {
         $newNode = new ListNode($data);
 
@@ -153,7 +138,8 @@ class LinkedList implements \Iterator
      * @param $data
      * @param $query
      */
-    public function insertAfter($data, $query)
+    public
+    function insertAfter($data, $query)
     {
         $newNode = new ListNode($data);
 
@@ -187,7 +173,8 @@ class LinkedList implements \Iterator
      * @param $data
      * @return void
      */
-    public function delete($data)
+    public
+    function delete($data)
     {
         if ($this->_firstNode) {
 
@@ -211,7 +198,8 @@ class LinkedList implements \Iterator
      *
      * @return bool
      */
-    public function deleteFirst()
+    public
+    function deleteFirst()
     {
         if ($this->_firstNode !== null) {
             if ($this->_firstNode->next !== null) {
@@ -231,7 +219,8 @@ class LinkedList implements \Iterator
      *
      * @return bool
      */
-    public function deleteLast()
+    public
+    function deleteLast()
     {
         if ($this->_firstNode !== null) {
             $currentNode = $this->_firstNode;
@@ -252,7 +241,8 @@ class LinkedList implements \Iterator
     }
 
 
-    public function reverse()
+    public
+    function reverse()
     {
         if ($this->_firstNode) {
 
@@ -278,7 +268,8 @@ class LinkedList implements \Iterator
      *
      * @return bool
      */
-    public function display()
+    public
+    function display()
     {
         echo 'Total Book Title: ' . $this->_totalNodes . '<br/>';
 
@@ -293,7 +284,8 @@ class LinkedList implements \Iterator
     }
 
 
-    public function getNthNode($node = 0)
+    public
+    function getNthNode($node = 0)
     {
 
         $count = 1;
@@ -310,39 +302,41 @@ class LinkedList implements \Iterator
         }
     }
 
-
-    /**
-     * Return the current element
-     * @link http://php.net/manual/en/iterator.current.php
-     * @return mixed Can return any type.
-     * @since 5.0.0
-     */
-    public function current()
-    {
-        return $this->_currentNode->data;
-    }
-
-    /**
-     * Move forward to next element
-     * @link http://php.net/manual/en/iterator.next.php
-     * @return void Any returned value is ignored.
-     * @since 5.0.0
-     */
-    public function next()
-    {
-        $this->_currentPosition++;
-        $this->_currentNode = $this->_currentNode->next;
-    }
-
     /**
      * Return the key of the current element
      * @link http://php.net/manual/en/iterator.key.php
      * @return mixed scalar on success, or null on failure.
      * @since 5.0.0
      */
-    public function key()
+    public
+    function key()
     {
         return $this->_currentPosition;
+    }
+
+    /**
+     * Display List With Iterator Methods
+     * @return void
+     */
+    public
+    function displayWithIterator()
+    {
+        for ($this->rewind(); $this->valid(); $this->next()) {
+            echo $this->current() . '<br/>';
+        }
+    }
+
+    /**
+     * Rewind the Iterator to the first element
+     * @link http://php.net/manual/en/iterator.rewind.php
+     * @return void Any returned value is ignored.
+     * @since 5.0.0
+     */
+    public
+    function rewind()
+    {
+        $this->_currentPosition = 0;
+        $this->_currentNode = $this->_firstNode;
     }
 
     /**
@@ -352,31 +346,34 @@ class LinkedList implements \Iterator
      * Returns true on success or false on failure.
      * @since 5.0.0
      */
-    public function valid()
+    public
+    function valid()
     {
         return $this->_currentNode !== NULL;
     }
 
     /**
-     * Rewind the Iterator to the first element
-     * @link http://php.net/manual/en/iterator.rewind.php
+     * Move forward to next element
+     * @link http://php.net/manual/en/iterator.next.php
      * @return void Any returned value is ignored.
      * @since 5.0.0
      */
-    public function rewind()
+    public
+    function next()
     {
-        $this->_currentPosition = 0;
-        $this->_currentNode = $this->_firstNode;
+        $this->_currentPosition++;
+        $this->_currentNode = $this->_currentNode->next;
     }
 
     /**
-     * Display List With Iterator Methods
-     * @return void
+     * Return the current element
+     * @link http://php.net/manual/en/iterator.current.php
+     * @return mixed Can return any type.
+     * @since 5.0.0
      */
-    public function displayWithIterator()
+    public
+    function current()
     {
-        for ($this->rewind(); $this->valid(); $this->next()) {
-            echo $this->current() . '<br/>';
-        }
+        return $this->_currentNode->data;
     }
 }

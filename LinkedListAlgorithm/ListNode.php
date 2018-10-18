@@ -21,6 +21,11 @@ class ListNode
     public $next = null;
 
     /**
+     * Link To the previous data
+     * @var null
+     */
+    public $previous = null;
+    /**
      * ListNode constructor.
      * @param string|null $data
      */
