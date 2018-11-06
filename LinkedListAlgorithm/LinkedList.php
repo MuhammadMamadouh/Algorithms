@@ -379,4 +379,14 @@ class LinkedList implements \Iterator
             echo $this->current() . '<br/>';
         }
     }
+
+    /**
+     * Get size of List
+     *
+     * @return int
+     */
+    public function getSize()
+    {
+        return $this->_totalNodes;
+    }
 }
