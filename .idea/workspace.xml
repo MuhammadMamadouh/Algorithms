@@ -1,32 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3f1ef18-bd0a-4fdf-ae2c-442b1df76fa9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Mohamed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Queue/Book.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Queue/BookLinkedList.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Queue/CircularQueue.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Queue/PriorityQueue.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Queue/Queue.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Queue/test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recursion/test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stack/Book.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stack/BookLinkedList.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stack/Stack.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stack/test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TreeStructure/BinaryTree/BST.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TreeStructure/BinaryTree/BSTtest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TreeStructure/BinaryTree/BinaryNode.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TreeStructure/BinaryTree/BinaryTree.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TreeStructure/BinaryTree/BinaryTreeWithArray.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TreeStructure/Tree.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TreeStructure/TreeNode.php" afterDir="false" />
+    <list default="true" id="d3f1ef18-bd0a-4fdf-ae2c-442b1df76fa9" name="Default" comment="Add BDS">
+      <change afterPath="$PROJECT_DIR$/Graph/BellmanFord.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graph/Dijkstra.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graph/Floyd-Warshall algorithm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graph/Graph.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graph/Prim'sSpanning.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Graph/TopologicalSort.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Heap/HeapSort.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Heap/MaxHeap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Heap/MinHeap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Algorithms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Algorithms.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Mohamed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Mohamed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedListAlgorithm/DoublyLinkedList.php" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedListAlgorithm/DoublyLinkedList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedListAlgorithm/LinkedList.php" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedListAlgorithm/LinkedList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinkedListAlgorithm/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedListAlgorithm/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TreeStructure/Tree.php" beforeDir="false" afterPath="$PROJECT_DIR$/TreeStructure/Tree.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,74 +25,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Recursion/test.php">
+      <file leaf-file-name="MinHeap.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Heap/MinHeap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+            <state relative-caret-position="1360">
+              <caret line="85" column="56" lean-forward="true" selection-start-line="85" selection-start-column="56" selection-end-line="85" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TreeNode.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TreeStructure/TreeNode.php">
+      <file leaf-file-name="MaxHeap.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Heap/MaxHeap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+            <state relative-caret-position="-1003">
+              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinaryNode.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TreeStructure/BinaryTree/BinaryNode.php">
+      <file leaf-file-name="HeapSort.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Heap/HeapSort.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="144" column="12" selection-start-line="144" selection-start-column="12" selection-end-line="144" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BST.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TreeStructure/BinaryTree/BST.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="213" column="5" selection-start-line="213" selection-start-column="5" selection-end-line="213" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BSTtest.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TreeStructure/BinaryTree/BSTtest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BinaryTree.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TreeStructure/BinaryTree/BinaryTree.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BinaryTreeWithArray.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TreeStructure/BinaryTree/BinaryTreeWithArray.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tree.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TreeStructure/Tree.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="59" column="49" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
+            <state relative-caret-position="221">
+              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -129,7 +72,9 @@
       <find>push</find>
       <find>TreeNode</find>
       <find>semi</find>
+      <find>i</find>
       <find>left</find>
+      <find>graph</find>
     </findStrings>
     <replaceStrings>
       <replace>insertAtEnd</replace>
@@ -138,6 +83,7 @@
       <replace>enqueue</replace>
       <replace>BinaryNode</replace>
       <replace>quarter</replace>
+      <replace>j</replace>
       <replace>right</replace>
     </replaceStrings>
   </component>
@@ -172,13 +118,31 @@
         <option value="$PROJECT_DIR$/Queue/CircularQueue.php" />
         <option value="$PROJECT_DIR$/Recursion/test.php" />
         <option value="$PROJECT_DIR$/TreeStructure/TreeNode.php" />
-        <option value="$PROJECT_DIR$/TreeStructure/Tree.php" />
         <option value="$PROJECT_DIR$/TreeStructure/BinaryNode.php" />
         <option value="$PROJECT_DIR$/TreeStructure/BinaryTree/BinaryTreeWithArray.php" />
         <option value="$PROJECT_DIR$/TreeStructure/BinaryTree/BinaryTree.php" />
         <option value="$PROJECT_DIR$/TreeStructure/BinaryTree/BinaryNode.php" />
         <option value="$PROJECT_DIR$/TreeStructure/BinaryTree/BST.php" />
         <option value="$PROJECT_DIR$/TreeStructure/BinaryTree/BSTtest.php" />
+        <option value="$PROJECT_DIR$/Sorting/BubbleSort.php" />
+        <option value="$PROJECT_DIR$/Sorting/SelectionSort.php" />
+        <option value="$PROJECT_DIR$/Sorting/insertionSort.php" />
+        <option value="$PROJECT_DIR$/Sorting/MergeSort.php" />
+        <option value="$PROJECT_DIR$/Sorting/QuickSort.php" />
+        <option value="$PROJECT_DIR$/Sorting/BucketSort.php" />
+        <option value="$PROJECT_DIR$/LinkedListAlgorithm/Searching/BinarySearch.php" />
+        <option value="$PROJECT_DIR$/Searching/interpolationSearch.php" />
+        <option value="$PROJECT_DIR$/Searching/ExponentialSearch.php" />
+        <option value="$PROJECT_DIR$/TreeStructure/Tree.php" />
+        <option value="$PROJECT_DIR$/Graph/Graph.php" />
+        <option value="$PROJECT_DIR$/Graph/TopologicalSort.php" />
+        <option value="$PROJECT_DIR$/Graph/Floyd-Warshall algorithm.php" />
+        <option value="$PROJECT_DIR$/Graph/Dijkstra.php" />
+        <option value="$PROJECT_DIR$/Graph/BellmanFord.php" />
+        <option value="$PROJECT_DIR$/Graph/Prim'sSpanning.php" />
+        <option value="$PROJECT_DIR$/Heap/MinHeap.php" />
+        <option value="$PROJECT_DIR$/Heap/MaxHeapWithQueue.php" />
+        <option value="$PROJECT_DIR$/Heap/HeapSort.php" />
       </list>
     </option>
   </component>
@@ -217,13 +181,7 @@
             <path>
               <item name="Algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="TreeStructure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="TreeStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="BinaryTree" type="462c0819:PsiDirectoryNode" />
+              <item name="Heap" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -238,15 +196,17 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Algorithms\TreeStructure\BinaryTree" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Algorithms\Graph" />
+      <recent name="C:\xampp\htdocs\Algorithms\Searching" />
+      <recent name="C:\xampp\htdocs\Algorithms\Sorting" />
       <recent name="C:\xampp\htdocs\Algorithms\TreeStructure\BinaryTree" />
       <recent name="C:\xampp\htdocs\Algorithms\TreeStructure" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Algorithms\Graph" />
       <recent name="C:\xampp\htdocs\Algorithms" />
-      <recent name="C:\xampp\htdocs\Algorithms\Stack" />
-      <recent name="C:\xampp\htdocs\Algorithms\LinkedListAlgorithm" />
+      <recent name="C:\xampp\htdocs\Algorithms\TreeStructure\BinaryTree" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -307,7 +267,41 @@
       <workItem from="1541288097876" duration="309000" />
       <workItem from="1541424844251" duration="8813000" />
       <workItem from="1541450373612" duration="611000" />
-      <workItem from="1541512304967" duration="4253000" />
+      <workItem from="1541512304967" duration="8511000" />
+      <workItem from="1541602335944" duration="1192000" />
+      <workItem from="1541622142129" duration="269000" />
+      <workItem from="1542029259230" duration="3252000" />
+      <workItem from="1542037538584" duration="5004000" />
+      <workItem from="1542062094096" duration="206000" />
+      <workItem from="1542116450223" duration="613000" />
+      <workItem from="1542143867089" duration="3354000" />
+      <workItem from="1542196801823" duration="4993000" />
+      <workItem from="1542221735488" duration="675000" />
+      <workItem from="1542371179477" duration="593000" />
+      <workItem from="1542379564604" duration="2023000" />
+      <workItem from="1542398997902" duration="3185000" />
+      <workItem from="1542477764894" duration="1237000" />
+      <workItem from="1542485772399" duration="624000" />
+      <workItem from="1542583667889" duration="2712000" />
+      <workItem from="1542633440822" duration="629000" />
+      <workItem from="1542647625564" duration="4627000" />
+      <workItem from="1542661008230" duration="605000" />
+      <workItem from="1542751020941" duration="1462000" />
+      <workItem from="1542836091442" duration="3370000" />
+      <workItem from="1542922586515" duration="2856000" />
+      <workItem from="1544103392245" duration="609000" />
+      <workItem from="1544128899816" duration="862000" />
+      <workItem from="1544484205707" duration="606000" />
+      <workItem from="1544570563036" duration="921000" />
+      <workItem from="1544654717577" duration="2071000" />
+      <workItem from="1544711127588" duration="1672000" />
+      <workItem from="1544737073981" duration="3332000" />
+      <workItem from="1544830705750" duration="4175000" />
+      <workItem from="1544879281991" duration="3148000" />
+      <workItem from="1544910759289" duration="598000" />
+      <workItem from="1545054330233" duration="211000" />
+      <workItem from="1546091023067" duration="6964000" />
+      <workItem from="1546122480014" duration="9641000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1539696298528</created>
@@ -344,11 +338,46 @@
       <option name="project" value="LOCAL" />
       <updated>1539901770353</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="implement tree data structure and its methods">
+      <created>1541516838369</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1541516838369</updated>
+    </task>
+    <task id="LOCAL-00007" summary="implementing Bubble sorting methods">
+      <created>1542032666067</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1542032666067</updated>
+    </task>
+    <task id="LOCAL-00008" summary="implementing Insertion sort methods">
+      <created>1542045812934</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1542045812934</updated>
+    </task>
+    <task id="LOCAL-00009" summary="implementing some sorting algorithms methods">
+      <created>1542204684000</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1542204684000</updated>
+    </task>
+    <task id="LOCAL-00010" summary="implementing improvementsof binary search algorithm">
+      <created>1542403665736</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1542403665736</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87803000" />
+    <option name="totallyTimeSpent" value="170352000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -358,9 +387,9 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32843137" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27124184" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.46568626" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22844176" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20272315" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -370,6 +399,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32843137" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -412,7 +442,12 @@
     <MESSAGE value="updated" />
     <MESSAGE value="add new functions&#10;1- insert&#10;2- insertFirst&#10;3- insertBefore&#10;4- insertAfter" />
     <MESSAGE value="add new functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new functions" />
+    <MESSAGE value="implement tree data structure and its methods" />
+    <MESSAGE value="implementing Bubble sorting methods" />
+    <MESSAGE value="implementing Insertion sort methods" />
+    <MESSAGE value="implementing some sorting algorithms methods" />
+    <MESSAGE value="implementing improvementsof binary search algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementing improvementsof binary search algorithm" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -422,132 +457,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_c.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LinkedListAlgorithm/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LinkedListAlgorithm/CircularLinkedList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LinkedListAlgorithm/DoublyLinkedList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LinkedListAlgorithm/ListNode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LinkedListAlgorithm/LinkedList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6426">
-          <caret line="378" column="44" selection-start-line="378" selection-start-column="44" selection-end-line="378" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_c.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LinkedListAlgorithm/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LinkedListAlgorithm/CircularLinkedList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LinkedListAlgorithm/ListNode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LinkedListAlgorithm/LinkedList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6426">
-          <caret line="378" column="44" selection-start-line="378" selection-start-column="44" selection-end-line="378" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_c.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LinkedListAlgorithm/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LinkedListAlgorithm/CircularLinkedList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LinkedListAlgorithm/ListNode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LinkedListAlgorithm/LinkedList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4964">
-          <caret line="292" column="50" selection-start-line="292" selection-start-column="50" selection-end-line="292" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LinkedListAlgorithm/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LinkedListAlgorithm/ListNode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LinkedListAlgorithm/test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -723,31 +632,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TreeStructure/Tree.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="49" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TreeStructure/BinaryTree/BinaryTreeWithArray.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Recursion/test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TreeStructure/TreeNode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -761,14 +649,14 @@
     <entry file="file://$PROJECT_DIR$/TreeStructure/BinaryTree/BinaryNode.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="144" column="12" selection-start-line="144" selection-start-column="12" selection-end-line="144" selection-end-column="12" />
+          <caret line="127" column="12" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TreeStructure/BinaryTree/BST.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="213" column="5" selection-start-line="213" selection-start-column="5" selection-end-line="213" selection-end-column="5" />
+          <caret line="211" column="5" selection-start-line="211" selection-start-column="5" selection-end-line="211" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -776,6 +664,153 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TreeStructure/BinaryTree/BinaryTreeWithArray.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sorting/BubbleSort.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1768">
+          <caret line="104" column="36" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sorting/SelectionSort.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sorting/insertionSort.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sorting/MergeSort.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sorting/QuickSort.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sorting/BucketSort.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Searching/interpolationSearch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Searching/BinarySearch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Searching/ExponentialSearch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TreeStructure/TreeNode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TreeStructure/Tree.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1819">
+          <caret line="107" column="13" selection-start-line="107" selection-start-column="13" selection-end-line="107" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph/Graph.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph/TopologicalSort.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph/Floyd-Warshall algorithm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="70" column="3" selection-start-line="70" selection-start-column="3" selection-end-line="70" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph/Dijkstra.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph/BellmanFord.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph/Prim'sSpanning.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Heap/HeapSort.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Heap/MinHeap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="85" column="56" lean-forward="true" selection-start-line="85" selection-start-column="56" selection-end-line="85" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Heap/MaxHeap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1003">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
         </state>
       </provider>
     </entry>

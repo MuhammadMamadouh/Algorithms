@@ -15,15 +15,25 @@ class Tree
     public $root = null;
 
     /**
+     * @var \SplQueue
+     */
+    public $visited;
+
+    /**
      * Tree constructor.
      * @param TreeNode $node
      */
     public function __construct(TreeNode $node)
     {
         $this->root = $node;
+        $this->visited = new \SplQueue();
     }
 
-
+    /**
+     * visit all nodes in the tree
+     * @param TreeNode $node
+     * @param int $level
+     */
     public function traverse(TreeNode $node, int $level = 0)
     {
         if ($node) {
@@ -33,6 +43,42 @@ class Tree
 
         foreach ($node->children as $child) {
             $this->traverse($child, $level + 1);
+        }
+    }
+
+    /**
+     * Searching at tree using Breadth first Algorithm
+     * @param TreeNode $node
+     * @return \SplQueue
+     */
+    public function BFS(TreeNode $node): \SplQueue
+    {
+        $queue = new \SplQueue();
+        $visited = new \SplQueue();
+
+        $queue->enqueue($node);
+
+        while (!$queue->isEmpty()) {
+            $current = $queue->dequeue();
+            $visited->enqueue($current);
+
+            foreach ($current->children as $child) {
+                $queue->enqueue($child);
+            }
+        }
+        return $visited;
+    }
+
+
+    public function DFS(TreeNode $node)
+    {
+
+        $this->visited->enqueue($node);
+
+        if ($node->children) {
+            foreach ($node->children as $child) {
+                $this->DFS($child);
+            }
         }
     }
 }
