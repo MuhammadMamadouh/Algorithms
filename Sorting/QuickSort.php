@@ -11,82 +11,52 @@
  * @param array $arr
  * @return void
  */
-function quickSort(array $arr, int $p, int $r)
+function quickSort(array &$arr, int $lower, int $upper)
 {
-    if ($p < $r) {
-        $q = partition($arr, $p, $r);
-        quickSort($arr, $p, $q);
-        quickSort($arr, $q + 1, $r);
+    if ($upper <= $lower) {
+        return;
     }
-}
 
-function partition($arr, int $p, int $r)
-{
-    $pivot = $arr[$p];
-
-    $i = $p - 1;
-    $j = $r + 1;
-
-    while (true) {
-        do {
-            $i++;
-        } while ($arr[$i] < $pivot && $arr[$i] != $pivot);
-
-        do {
-            $j--;
-        } while ($arr[$j] > $pivot && $arr[$j] != $pivot);
-
-        if ($i < $j) {
-            $temp = $arr[$i];
-            $arr[$j] = $arr[$j];
-            $arr[$j] = $temp;
-        } else {
-            return $j;
+    $pivot = $arr[$lower];
+    $start = $lower;
+    $stop = $upper;
+    while ($lower < $upper) {
+        while ($arr[$lower] <= $pivot && $lower < $upper) {
+            $lower++;
+            // echo 'lower: ' . $lower;
         }
-    }
-}
-
-/**
- *
- * @param array $left
- * @param array $right
- * @return array
- */
-function merge(array $left, array $right): array
-{
-    $combined = [];
-    $countLeft = count($left);
-    $countRight = count($right);
-    $rightIndex = $leftIndex = 0;
-
-    while ($leftIndex < $countLeft && $rightIndex < $countRight) {
-        if ($left[$leftIndex] > $right[$rightIndex]) {
-            $combined[] = $right[$rightIndex];
-            $rightIndex++;
-        } else {
-            $combined[] = $left[$leftIndex];
-            $leftIndex++;
+        while ($arr[$upper] > $pivot && $lower <= $upper) {
+            $upper--;
+            // echo 'upper: ' . $upper;
         }
-    }
-    while ($leftIndex < $countLeft) {
-        $combined[] = $leftIndex[$leftIndex];
-        $leftIndex++;
-    }
 
-    while ($rightIndex < $countRight) {
-        $combined[] = $right[$rightIndex];
-        $rightIndex++;
+        if ($lower < $upper) {
+            swap($arr, $upper, $lower);
+        }
+        echo 'lower: ' . $lower . PHP_EOL;
     }
-
-
+    swap($arr, $upper, $lower);
+    quickSort($arr, $start, $upper - 1);
+    quickSort($arr, $upper + 1, $stop);
+}
+function swap(array $arr, int $first, int $second)
+{
+    $temp = $arr[$first];
+    $arr[$first] = $arr[$second];
+    $arr[$second] = $temp;
 }
 
-$arr = [20, 45, 30, 79, 10, 15, 11, 19,];
+function sortArray(array $arr)
+{
+    quickSort($arr, 0, count($arr) - 1);
+}
+
+$arr = [20, 45, 30, 79, 10, 15, 11, 19];
 
 echo implode(', ', $arr);
 
-echo '<br/>';
+echo PHP_EOL;
 
-insertionSort($arr);
+sortArray($arr);
 
 echo implode(', ', $arr);

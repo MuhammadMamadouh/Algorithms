@@ -14,11 +14,11 @@
  */
 function insertionSort(array &$arr)
 {
-    $length = count($arr);
-    for ($i = 1; $i < $length; $i++) {
+    $len = count($arr);
+    for($i=1; $i<$len; $i++){
         $key = $arr[$i];
         $j = $i - 1;
-        while ($j >= 0 && $arr[$j] > $key) {
+        while($j >= 0 && $arr[$j] > $key){
             $arr[$j + 1] = $arr[$j];
             $j--;
         }
@@ -26,12 +26,11 @@ function insertionSort(array &$arr)
     }
 }
 
+$arr = [20, 45, 30, 79, 10, 15, 11, 19];
 
-$arr = [20, 45, 30, 79, 10, 15, 11, 19,];
+echo implode(', ', $arr) ;
 
-echo implode(', ', $arr);
-
-echo '<br/>';
+echo PHP_EOL;
 
 insertionSort($arr);
 

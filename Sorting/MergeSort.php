@@ -14,15 +14,16 @@
 function mergeSort(array $arr): array
 {
     $length = count($arr);
-    $mid = (int)$length / 2;
-    if ($length == 1) return $arr;
+    $mid = (int) $length / 2;
+    if ($length == 1) {
+        return $arr;
+    }
 
     $left = mergeSort(array_slice($arr, 0, $mid));
     $right = mergeSort(array_slice($arr, $mid));
 
     return merge($left, $right);
 }
-
 
 /**
  *
@@ -35,8 +36,7 @@ function merge(array $left, array $right): array
     $combined = [];
     $countLeft = count($left);
     $countRight = count($right);
-    $rightIndex = $leftIndex = 0;
-
+    $leftIndex = $rightIndex = 0;
     while ($leftIndex < $countLeft && $rightIndex < $countRight) {
         if ($left[$leftIndex] > $right[$rightIndex]) {
             $combined[] = $right[$rightIndex];
@@ -46,25 +46,24 @@ function merge(array $left, array $right): array
             $leftIndex++;
         }
     }
+   
     while ($leftIndex < $countLeft) {
-        $combined[] = $leftIndex[$leftIndex];
+        $combined[] = $left[$leftIndex];
         $leftIndex++;
     }
-
     while ($rightIndex < $countRight) {
         $combined[] = $right[$rightIndex];
         $rightIndex++;
     }
-
-
+    return $combined;
 }
 
-$arr = [20, 45, 30, 79, 10, 15, 11, 19,];
+$arr = [20, 45, 30, 79, 10, 15, 11, 19];
 
 echo implode(', ', $arr);
 
-echo '<br/>';
+echo PHP_EOL;
 
-insertionSort($arr);
+$sorted = mergeSort($arr);
 
-echo implode(', ', $arr);
+echo implode(', ', $sorted);
